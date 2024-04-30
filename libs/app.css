@@ -1,0 +1,4055 @@
+.hClqJJ {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(242, 245, 250);
+    overflow-y: auto;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fGvqml {
+    width: 100%;
+    height: 4.5rem;
+    animation: 0.5s ease-out 0s 1 normal forwards running slideInAnimation;
+}
+
+@media screen and (min-width: 800px) {
+    .fAZNfJ {
+        margin-top: 0px;
+    }
+}
+
+.fAZNfJ {
+    width: 792.73px;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: white;
+    margin: 0px auto;
+    border-radius: 4px;
+    box-shadow: rgba(186, 200, 227, 0.1) 0px 20px 60px 0px, rgba(186, 200, 227, 0.3) 0px 16px 36px 0px;
+    animation: 0.5s ease-out 0s 1 normal forwards running opacityOutAnimation;
+}
+
+.resume-container.A4 {
+    width: 793.92px;
+    min-height: 1123.2px;
+}
+
+.template * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.template__european2023 {
+    display: flex;
+    width: 100%;
+    min-height: inherit;
+}
+
+.template__european2023.line-spacing--100 {
+    line-height: 18px;
+}
+
+.template__european2023.professional {
+    font-family: "Rubik", "Noto Serif SC", "Noto Serif JP", "Noto Serif Hebrew";
+}
+
+.template__european2023.medium {
+    font-size: 11px;
+}
+
+.u-fullWidth {
+    max-width: 100% !important;
+}
+
+.u-preview-editor {
+    height: 100%;
+    background: grey;
+}
+
+.mobile-hidden {
+    display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+    .mobile-hidden {
+        display: initial;
+    }
+}
+
+.mobile-show {
+    display: initial;
+}
+
+@media only screen and (min-width: 1024px) {
+    .mobile-show {
+        display: none;
+    }
+}
+
+/* Titles */
+.navbar {
+    position: relative;
+    z-index: 2000;
+}
+
+.navbarback {
+    z-index: 1200;
+}
+
+.navbar {
+    background: #26a0f4;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    height: 64px;
+    margin: 0;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.navbar .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .container .burguer {
+    background: transparent;
+    width: 50px;
+    height: 64px;
+    border: none;
+    cursor: pointer;
+    line-height: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 0;
+    flex: 0 0 auto;
+    color: #fff;
+}
+
+.navbar .container .burguer .image {
+    width: 24px;
+    height: 24px;
+    margin: 0 0 0 10px;
+}
+
+.navbar .container .burguer:hover,
+.navbar .container .burguer:focus,
+.navbar .container .burguer:active {
+    outline: none;
+}
+
+.navbar .logo {
+    display: inline-block;
+    line-height: 0;
+    margin: 0 0 0 50px;
+}
+
+.navbar .logo .image {
+    width: auto;
+    height: 44px;
+    max-width: 300px;
+}
+
+.navbar .backdrop {
+    display: none;
+}
+
+.navbar .menu {
+    height: 100%;
+    z-index: 100;
+}
+
+.navbar .menu .items {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .menu .items .item {
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar .menu .items .item .icon {
+    display: none;
+}
+
+.navbar .menu .items .item>.container {
+    height: 100%;
+    display: block;
+}
+
+.navbar .menu .items .item>.container .dropdownbutton {
+    padding: 0 10px;
+    transition: opacity 400ms linear;
+    opacity: 0.7;
+}
+
+.navbar .menu .items .item>.container .dropdownbutton .image {
+    width: 20px;
+    height: 20px;
+    max-width: 300px;
+}
+
+.navbar .menu .items .item>.container .dropdownbutton:after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-bottom: -10px;
+    bottom: 0;
+    margin-right: -5px;
+    right: 50%;
+    width: 0;
+    height: 0;
+    border-right: 5px solid transparent;
+    border-top: 0;
+    border-left: 5px solid transparent;
+    border-bottom: 8px solid #18324f;
+    transition: opacity 400ms linear;
+    opacity: 0;
+}
+
+.navbar .menu .items .item>.container .dropdownbutton.opened {
+    opacity: 1;
+}
+
+.navbar .menu .items .item>.container .dropdownbutton.opened:after {
+    transition: opacity 200ms linear;
+    opacity: 1;
+}
+
+.navbar .menu .items .item>.container .dropdownbutton:hover {
+    opacity: 1;
+    transition: opacity 200ms linear;
+}
+
+.navbar .menu .dropdownbutton,
+.navbar .menu .custom-item {
+    border: none;
+    background: transparent;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    cursor: pointer;
+}
+
+.navbar .menu .dropdownbutton:visited,
+.navbar .menu .dropdownbutton:hover,
+.navbar .menu .dropdownbutton:focus,
+.navbar .menu .dropdownbutton:active,
+.navbar .menu .custom-item:visited,
+.navbar .menu .custom-item:hover,
+.navbar .menu .custom-item:focus,
+.navbar .menu .custom-item:active {
+    outline: none;
+    color: #fff;
+}
+
+.navbar .menu .wrapper {
+    padding: 0 10px;
+    transition: opacity 400ms linear;
+    opacity: 0.7;
+}
+
+.navbar .menu .wrapper.container {
+    padding: 0;
+    opacity: 1;
+}
+
+.navbar .menu .wrapper.current {
+    opacity: 1;
+}
+
+.navbar .menu .wrapper.current .custom-item {
+    opacity: 1;
+    -webkit-box-shadow: inset 0 -5px 0 0 #18324f;
+    -moz-box-shadow: inset 0 -5px 0 0 #18324f;
+    box-shadow: inset 0 -5px 0 0 #18324f;
+}
+
+.navbar .menu .wrapper:hover {
+    opacity: 1;
+    transition: opacity 200ms linear;
+}
+
+.navbar .menu .dropdown {
+    background: #18324f;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    transition: opacity 200ms linear;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.navbar .menu .dropdown-header {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar .menu .dropdown-header {
+        display: block;
+        color: #1e2021;
+        font-family: "Roboto", sans-serif;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 40px;
+        padding: 40px 0 24px 16px;
+        margin: 0;
+    }
+}
+
+.navbar .menu .dropdown-footer {
+    display: none;
+}
+
+.navbar .menu .dropdown-footer .strong {
+    font-weight: bold;
+}
+
+.navbar .menu .dropdown-footer .highlighted {
+    font-weight: bold;
+    color: #26a0f4;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar .menu .dropdown-footer {
+        display: block;
+        color: #1e2021;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 16px 48px 16px 16px;
+        margin: 0;
+    }
+}
+
+.navbar .menu .dropdown.hidden {
+    transition: opacity 400ms linear;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.navbar .menu .dropdown .menu .items {
+    display: block;
+}
+
+.navbar .menu .dropdown .menu .items .item {
+    width: 100%;
+}
+
+.navbar .menu .dropdown .menu .items .item .wrapper {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    transition: opacity 400ms linear;
+    opacity: 0.8;
+}
+
+.navbar .menu .dropdown .menu .items .item .wrapper.current {
+    opacity: 1;
+    background-color: #23476f;
+    background-size: 14px 14px;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: inset 2px 0 0 0 #26a0f4;
+    -moz-box-shadow: inset 2px 0 0 0 #26a0f4;
+    box-shadow: inset 2px 0 0 0 #26a0f4;
+}
+
+.navbar .menu .dropdown .menu .items .item .wrapper .custom-item {
+    display: inline-block;
+    flex: 1 0 auto;
+    font-size: 13px;
+    line-height: 32px;
+    height: 32px;
+    box-shadow: none;
+}
+
+.navbar .menu .dropdown .menu .items .item .wrapper .custom-item .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar .menu .dropdown .menu .items .item .wrapper .custom-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar .menu .dropdown .menu .items .item .wrapper .custom-item.no-icon {
+    padding-left: 32px;
+}
+
+.navbar .menu .dropdown .menu .items .item .wrapper .custom-item .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 9px;
+    width: 14px;
+    height: 14px;
+}
+
+.navbar .menu .dropdown .menu .items .item .wrapper.icon {
+    display: inline-block;
+    line-height: 0;
+    margin: 0;
+    align-items: flex-start;
+    flex: 0 0 auto;
+    opacity: 1;
+    padding: 0 9px;
+    width: 14px;
+    height: 14px;
+}
+
+.navbar .menu .dropdown .menu .items .item .wrapper.icon.empty {
+    width: 32px;
+    padding: 0;
+}
+
+.navbar .menu .dropdown .menu .items .item .wrapper:hover {
+    opacity: 1;
+    transition: opacity 200ms linear;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar:not(.navbarback) .container {
+        width: 100%;
+    }
+
+    .navbar:not(.navbarback) .container .burguer {
+        display: flex;
+    }
+
+    .navbar:not(.navbarback) .logo {
+        flex: 1 0 auto;
+        text-align: center;
+        pointer-events: none;
+        cursor: default;
+        margin-left: 0;
+        padding-right: 50px;
+    }
+
+    .navbar:not(.navbarback) .backdrop {
+        display: block;
+        background: rgba(0, 0, 0, 0.65);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 500;
+        touch-action: none;
+    }
+
+    .navbar:not(.navbarback) .backdrop.hidden {
+        display: none;
+    }
+
+    .navbar:not(.navbarback) .menu {
+        width: 312px;
+        max-width: 100%;
+        position: fixed;
+        min-height: 100vh;
+        height: 100%;
+        left: 0;
+        top: 0;
+        margin-left: 0;
+        transition: margin-left 200ms linear;
+        background: #f8f9fa;
+        z-index: 1000;
+        overflow: auto;
+    }
+
+    .navbar:not(.navbarback) .menu .items {
+        height: auto;
+        display: block;
+    }
+
+    .navbar:not(.navbarback) .menu .items .item {
+        display: block;
+    }
+
+    .navbar:not(.navbarback) .menu .items .item .wrapper {
+        opacity: 1;
+        padding: 0;
+        background-color: #f8f9fa;
+    }
+
+    .navbar:not(.navbarback) .menu .items .item .wrapper .custom-item {
+        text-align: left;
+        font-size: 16px;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        line-height: normal;
+        opacity: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        color: #1e2021;
+        background-size: 14px 14px;
+        background-position: 10px center;
+        background-repeat: no-repeat;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        height: 54px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.15px;
+        border-bottom: 1px solid #e7ebee;
+    }
+
+    .navbar:not(.navbarback) .menu .items .item .wrapper .custom-item .icon {
+        padding: 0 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 23px;
+        height: 23px;
+    }
+
+    .navbar:not(.navbarback) .menu .items .item .wrapper.current {
+        box-shadow: none;
+        background-color: #e1f1fd;
+    }
+
+    .navbar:not(.navbarback) .menu .items .item .wrapper.current .custom-item {
+        border: none;
+    }
+
+    .navbar:not(.navbarback) .menu .items .item .wrapper:not(.container) {
+        padding: 0 8px;
+    }
+
+    .navbar:not(.navbarback) .menu .dropdownbutton {
+        display: none;
+    }
+
+    .navbar:not(.navbarback) .menu .dropdown {
+        position: static;
+        margin-top: 0;
+        width: auto;
+    }
+
+    .navbar:not(.navbarback) .menu .dropdown.hidden {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .navbar:not(.navbarback) .menu .dropdown .menu {
+        display: block;
+        position: static;
+        min-height: 0;
+        box-shadow: none;
+        max-width: 100%;
+    }
+
+    .navbar:not(.navbarback) .menu .dropdown .menu .items .item .wrapper {
+        opacity: 1;
+        background-color: #f8f9fa;
+        padding: 0 8px;
+    }
+
+    .navbar:not(.navbarback) .menu .dropdown .menu .items .item .wrapper.current {
+        box-shadow: none;
+        background-color: #e1f1fd;
+    }
+
+    .navbar:not(.navbarback) .menu .dropdown .menu .items .item .wrapper.current .custom-item {
+        border: none;
+    }
+
+    .navbar:not(.navbarback) .menu .dropdown .menu .items .item .wrapper .icon {
+        padding: 0 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 23px;
+        height: 23px;
+    }
+
+    .navbar:not(.navbarback) .menu .dropdown .menu .items .item .wrapper .custom-item {
+        text-align: left;
+        font-size: 16px;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        line-height: normal;
+        opacity: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        color: #1e2021;
+        background-size: 14px 14px;
+        background-position: 10px center;
+        background-repeat: no-repeat;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        height: 54px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.15px;
+        border-bottom: 1px solid #e7ebee;
+    }
+
+    .navbar:not(.navbarback) .menu.hidden {
+        transition: margin-left 400ms linear;
+        margin-left: -100vw;
+    }
+}
+
+.navbarback .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    flex: 1 1 auto;
+    overflow: hidden;
+    max-width: none;
+}
+
+.navbarback .container .backbutton {
+    flex: 0 0 auto;
+}
+
+.navbarback .container .backbutton .custom-item {
+    width: 40px;
+    height: 64px;
+    margin-left: 10px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbarback .container .backbutton .custom-item {
+        font-size: 16px;
+    }
+}
+
+.navbarback .container .backbutton .custom-item .image {
+    width: 18px;
+    height: 18px;
+}
+
+.navbarback .title {
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-weight: normal;
+    margin: 0;
+    font-size: 18px;
+    display: inline-block;
+    flex: 1 1 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0 24px 0 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbarback .title {
+        font-size: 16px;
+    }
+}
+
+.navbarback .menu .items .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarback .menu .items .item .wrapper {
+    opacity: 1;
+}
+
+.navbarback .menu .items .item .wrapper.icon {
+    display: none;
+}
+
+.navbarback .menu .items .item .wrapper .custom-item {
+    opacity: 1;
+    margin: 0;
+    background: #fff;
+    color: #26a0f4;
+    height: auto;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbarback .menu .items .item .wrapper .custom-item {
+        font-size: 16px;
+    }
+}
+
+.navbarback .menu .items .item .wrapper:visited,
+.navbarback .menu .items .item .wrapper:hover,
+.navbarback .menu .items .item .wrapper:focus,
+.navbarback .menu .items .item .wrapper:active {
+    color: #26a0f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+.MuiSvgIcon-colorPrimary {
+    color: #3f51b5;
+}
+
+.MuiSvgIcon-colorSecondary {
+    color: #f50057;
+}
+
+.MuiSvgIcon-colorAction {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.MuiSvgIcon-colorError {
+    color: #f44336;
+}
+
+.MuiSvgIcon-colorDisabled {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.MuiSvgIcon-fontSizeInherit {
+    font-size: inherit;
+}
+
+.MuiSvgIcon-fontSizeSmall {
+    font-size: 1.25rem;
+}
+
+.MuiSvgIcon-fontSizeLarge {
+    font-size: 2.1875rem;
+}
+
+.MuiTouchRipple-root {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+.MuiTouchRipple-ripple {
+    opacity: 0;
+    position: absolute;
+}
+
+.MuiTouchRipple-rippleVisible {
+    opacity: 0.3;
+    animation: MuiTouchRipple-keyframes-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1);
+}
+
+.MuiTouchRipple-ripplePulsate {
+    animation-duration: 200ms;
+}
+
+.MuiTouchRipple-child {
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 1;
+    border-radius: 50%;
+    background-color: currentColor;
+}
+
+.MuiTouchRipple-childLeaving {
+    opacity: 0;
+    animation: MuiTouchRipple-keyframes-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.MuiTouchRipple-childPulsate {
+    top: 0;
+    left: 0;
+    position: absolute;
+    animation: MuiTouchRipple-keyframes-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Rubik Italic"), local("Rubik-Italic"),
+        url(https://static.onlinecv.es/fonts/Rubik-Italic.woff2) format("woff2"),
+        url(https://static.onlinecv.es/fonts/Rubik-Italic.woff) format("woff");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116,
+        U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F, U+0100-024F, U+0259,
+        U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113,
+        U+2C60-2C7F, U+A720-A7FF, U+0000-00FF, U+0131, U+0152-0153,
+        U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+        U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Rubik"), local("Rubik-Regular"),
+        url(https://static.onlinecv.es/fonts/Rubik-Regular.woff2) format("woff2"),
+        url(https://static.onlinecv.es/fonts/Rubik-Regular.woff) format("woff");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116,
+        U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F, U+0100-024F, U+0259,
+        U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113,
+        U+2C60-2C7F, U+A720-A7FF, U+0000-00FF, U+0131, U+0152-0153,
+        U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+        U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Rubik Bold"), local("Rubik-Bold"),
+        url(https://static.onlinecv.es/fonts/Rubik-Bold.woff2) format("woff2"),
+        url(https://static.onlinecv.es/fonts/Rubik-Bold.woff) format("woff");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116,
+        U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F, U+0100-024F, U+0259,
+        U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113,
+        U+2C60-2C7F, U+A720-A7FF, U+0000-00FF, U+0131, U+0152-0153,
+        U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+        U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+        url("https://static.onlinecv.es/fonts/roboto-v30-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("https://static.onlinecv.es/fonts/roboto-v30-latin-regular.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Roboto Mono"), local("RobotoMono-Regular"),
+        url(https://static.onlinecv.es/fonts/RobotoMono-Regular.woff2) format("woff2"),
+        url(https://static.onlinecv.es/fonts/RobotoMono-Regular.woff) format("woff");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+        U+A640-A69F, U+FE2E-FE2F, U+0400-045F, U+0490-0491,
+        U+04B0-04B1, U+2116, U+1F00-1FFF, U+0370-03FF, U+0102-0103,
+        U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+        U+01AF-01B0, U+1EA0-1EF9, U+20AB, U+0100-024F, U+0259,
+        U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113,
+        U+2C60-2C7F, U+A720-A7FF, U+0000-00FF, U+0131, U+0152-0153,
+        U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+        U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Roboto Mono Italic"), local("RobotoMono-Italic"),
+        url(https://static.onlinecv.es/fonts/RobotoMono-Italic.woff2) format("woff2"),
+        url(https://static.onlinecv.es/fonts/RobotoMono-Italic.woff) format("woff");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+        U+A640-A69F, U+FE2E-FE2F, U+0400-045F, U+0490-0491,
+        U+04B0-04B1, U+2116, U+1F00-1FFF, U+0370-03FF, U+0102-0103,
+        U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+        U+01AF-01B0, U+1EA0-1EF9, U+20AB, U+0100-024F, U+0259,
+        U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113,
+        U+2C60-2C7F, U+A720-A7FF, U+0000-00FF, U+0131, U+0152-0153,
+        U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+        U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Roboto Mono Italic"), local("RobotoMono-Italic"),
+        url(https://static.onlinecv.es/fonts/RobotoMono-Italic.woff2) format("woff2"),
+        url(https://static.onlinecv.es/fonts/RobotoMono-Italic.woff) format("woff");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+        U+A640-A69F, U+FE2E-FE2F, U+0400-045F, U+0490-0491,
+        U+04B0-04B1, U+2116, U+1F00-1FFF, U+0370-03FF, U+0102-0103,
+        U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+        U+01AF-01B0, U+1EA0-1EF9, U+20AB, U+0100-024F, U+0259,
+        U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113,
+        U+2C60-2C7F, U+A720-A7FF, U+0000-00FF, U+0131, U+0152-0153,
+        U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+        U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Roboto Mono Bold"), local("RobotoMono-Bold"),
+        url(https://static.onlinecv.es/fonts/RobotoMono-Bold.woff2) format("woff2"),
+        url(https://static.onlinecv.es/fonts/RobotoMono-Bold.woff) format("woff");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+        U+A640-A69F, U+FE2E-FE2F, U+0400-045F, U+0490-0491,
+        U+04B0-04B1, U+2116, U+1F00-1FFF, U+0370-03FF, U+0102-0103,
+        U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+        U+01AF-01B0, U+1EA0-1EF9, U+20AB, U+0100-024F, U+0259,
+        U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113,
+        U+2C60-2C7F, U+A720-A7FF, U+0000-00FF, U+0131, U+0152-0153,
+        U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+        U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+        url("https://static.onlinecv.es/fonts/eb-garamond-v26-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("https://static.onlinecv.es/fonts/eb-garamond-v26-latin-regular.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: "EB Garamond";
+    font-style: italic;
+    font-weight: 400;
+    src: local(""),
+        url("https://static.onlinecv.es/fonts/eb-garamond-v26-latin-italic.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("https://static.onlinecv.es/fonts/eb-garamond-v26-latin-italic.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://static.onlinecv.es/fonts/playfair-display-v30-latin-regular.woff2") format("woff2"),
+        /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url("https://static.onlinecv.es/fonts/playfair-display-v30-latin-regular.woff") format("woff");
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 800;
+    src: url("https://static.onlinecv.es/fonts/playfair-display-v30-latin-800.woff2") format("woff2"),
+        /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url("https://static.onlinecv.es/fonts/playfair-display-v30-latin-800.woff") format("woff");
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 500;
+    src: url("https://static.onlinecv.es/fonts/playfair-display-v30-latin-500.woff2") format("woff2"),
+        /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url("https://static.onlinecv.es/fonts/playfair-display-v30-latin-500.woff") format("woff");
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 900;
+    src: url("https://static.onlinecv.es/fonts/playfair-display-v30-latin-900.woff2") format("woff2"),
+        /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url("https://static.onlinecv.es/fonts/playfair-display-v30-latin-900.woff") format("woff");
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: "Noto Serif SC";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Noto Serif SC Regular"),
+        local("NotoSerifSC-Regular"),
+        url("https://static.onlinecv.es/fonts/NotoSerif-SC.woff2") format("woff2"),
+        url("https://static.onlinecv.es/fonts/NotoSerif-SC.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Noto Serif SC";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Noto Serif SC Regular"),
+        local("NotoSerifSC-Regular"),
+        url("https://static.onlinecv.es/fonts/NotoSerif-SC-Bold.woff2") format("woff2"),
+        url("https://static.onlinecv.es/fonts/NotoSerif-SC-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Noto Serif JP";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Noto Serif JP Regular"),
+        local("NotoSerifJP-Regular"),
+        url("https://static.onlinecv.es/fonts/NotoSerif-JP.woff2") format("woff2"),
+        url("https://static.onlinecv.es/fonts/NotoSerif-JP.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Noto Serif JP";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Noto Serif JP Bold"), local("NotoSerifJP-Bold"),
+        url("https://static.onlinecv.es/fonts/NotoSerif-JP-Bold.woff2") format("woff2"),
+        url("https://static.onlinecv.es/fonts/NotoSerif-JP-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Noto Serif Hebrew";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://static.onlinecv.es/fonts/noto-serif-hebrew-v25-hebrew_latin-regular.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Noto Serif Hebrew";
+    font-style: normal;
+    font-weight: 700;
+    src: url("https://static.onlinecv.es/fonts/noto-serif-hebrew-v25-hebrew_latin-700.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@page {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden,
+.hide-on-preview-html {
+    display: none;
+}
+
+.cover-ambitious {
+    padding: 36px 72px !important;
+    color: #303030;
+    font-family: "Noto Serif", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.cover-ambitious.font-language--zh-CN {
+    font-family: "Noto Serif SC";
+}
+
+.cover-ambitious.font-language--ja-JP {
+    font-family: "Noto Serif JP";
+}
+
+.cover-ambitious .cover-letter__title {
+    color: #17a095;
+}
+
+.cover-ambitious .cover-letter__header {
+    font-size: 10px;
+    color: #303030;
+}
+
+.cover-ambitious .cover-letter__date {
+    background-color: #17a095;
+    color: #ffffff;
+}
+
+.cover-ambitious .cover-letter__name {
+    margin: 16px 0;
+    color: #17a095;
+}
+
+.cover-ambitious .cover-letter__contact {
+    align-self: flex-end;
+}
+
+.cover-letter__name--signature,
+.cover-letter__name,
+.cover-letter__date,
+.cover-letter__title {
+    font-weight: 700;
+}
+
+.cover-letter__name--signature,
+.cover-letter__name,
+.cover-letter__date,
+.cover-letter__title {
+    font-weight: 700;
+}
+
+.cover-letter {
+    word-wrap: break-word;
+}
+
+.cover-letter.letter {
+    min-height: 1043px;
+    width: 816px;
+    box-sizing: border-box;
+}
+
+.cover-letter.A4 {
+    min-height: 1106px;
+    width: 793.92px;
+    box-sizing: border-box;
+}
+
+.cover-letter * {
+    line-height: 1.5em;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cover-letter ul,
+.cover-letter ol {
+    margin-top: 8px;
+}
+
+.cover-letter ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.cover-letter ul li {
+    position: relative;
+}
+
+.cover-letter ul li:before {
+    content: "•";
+    position: absolute;
+    left: -12px;
+}
+
+.cover-letter ol {
+    padding-left: 20px;
+    list-style-position: outside;
+}
+
+.cover-letter__title {
+    font-size: 16px;
+}
+
+.cover-letter__title span:first-child {
+    margin-right: 0.4em;
+}
+
+.cover-letter__content {
+    width: 66.6666666667%;
+    font-size: 11.5px;
+    color: #303030;
+}
+
+.cover-letter__contact {
+    font-size: 11.5px;
+    outline: none;
+    line-height: 0;
+    text-align: right;
+    margin-bottom: 32px;
+}
+
+.cover-letter__date {
+    font-size: 11.5px;
+    padding: 5px 10px;
+    margin-bottom: 16px;
+    line-height: 20px;
+}
+
+.cover-letter__name {
+    font-size: 16px;
+}
+
+.cover-letter__name span:first-child {
+    margin-right: 0.2em;
+}
+
+.cover-letter__name span:nth-child(2) {
+    margin-right: 0.3em;
+}
+
+.cover-letter__name--signature {
+    line-height: 25px;
+}
+
+.cover-letter__name--signature span:first-child {
+    margin-right: 0.4em;
+}
+
+.cover-letter__body {
+    margin-bottom: 8px;
+}
+
+.cover-letter__recipient {
+    font-size: 10px;
+    margin-bottom: 32px;
+}
+
+.cover-letter__recipient p,
+.cover-letter__recipient span {
+    font-style: italic;
+}
+
+.cover-letter__recipient .cover-letter__name span {
+    font-style: normal;
+}
+
+.cover-letter__signature {
+    margin-top: 32px;
+    line-height: 25px;
+    font-style: italic;
+}
+
+.cover-letter__city {
+    font-style: italic;
+}
+
+.cover-letter__city span:not(:last-child) {
+    margin-right: 0.4em;
+}
+
+.cover-letter__city--span {
+    margin-left: 0.3em;
+}
+
+.cover-letter__greeting {
+    margin-bottom: 8px;
+    height: 25px;
+}
+
+.template__cl__amsterdam.line-spacing--50 .content {
+    line-height: 16px;
+}
+
+.template__cl__amsterdam.line-spacing--75 .content {
+    line-height: 18px;
+}
+
+.template__cl__amsterdam.line-spacing--100 .content {
+    line-height: 20px;
+}
+
+.template__cl__amsterdam.line-spacing--125 .content {
+    line-height: 22px;
+}
+
+.template__cl__amsterdam.line-spacing--150 .content {
+    line-height: 24px;
+}
+
+.template__cl__amsterdam.classic {
+    font-family: "Libre Caslon Text", "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+}
+
+.template__cl__amsterdam.classic .header__left {
+    font-family: "Bellefair", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__cl__amsterdam.modern {
+    font-family: "Roboto", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__cl__amsterdam.modern .header__left {
+    font-family: "Libre Caslon Text", "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+}
+
+.template__cl__amsterdam.professional {
+    font-family: "Libre Caslon Text", "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+}
+
+.template__cl__amsterdam.professional .header__left {
+    font-family: "Roboto Condensed", "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+}
+
+.template__cl__amsterdam.professional .cover-letter__recipient,
+.template__cl__amsterdam.professional .cover-letter__name--signature {
+    font-family: "Roboto Condensed", "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+}
+
+.template__cl__amsterdam.elegant {
+    font-family: "Libre Caslon Text", "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+}
+
+.template__cl__amsterdam.elegant .header__left {
+    font-family: "Playfair Display", "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+}
+
+.template__cl__amsterdam.tech {
+    font-family: "Roboto", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__cl__amsterdam.tech .header__left {
+    font-family: "Roboto Mono", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__cl__amsterdam.small .content {
+    font-size: 12px;
+}
+
+.template__cl__amsterdam.medium .content {
+    font-size: 14px;
+}
+
+.template__cl__amsterdam.large .content {
+    font-size: 16px;
+}
+
+.template__cl__amsterdam.green {
+    background-image: linear-gradient(to right,
+            #ffffff 50%,
+            #99a298 50%);
+    color: #3e423d;
+}
+
+.template__cl__amsterdam.green .cover-letter__date {
+    color: rgba(62, 66, 61, 0.55);
+}
+
+.template__cl__amsterdam.green .cover-letter__date:before,
+.template__cl__amsterdam.green .cover-letter__greeting:before {
+    background: rgba(62, 66, 61, 0.55);
+}
+
+.template__cl__amsterdam.green .cover-letter__name {
+    color: #3e423d;
+}
+
+.template__cl__amsterdam.green .cover-letter__recipient {
+    color: rgba(62, 66, 61, 0.55);
+}
+
+.template__cl__amsterdam.green .cover-letter__recipient p:first-of-type {
+    color: #3e423d;
+}
+
+.template__cl__amsterdam.blue {
+    background-image: linear-gradient(to right,
+            #ffffff 50%,
+            #99a2b3 50%);
+    color: #020203;
+}
+
+.template__cl__amsterdam.blue .cover-letter__date {
+    color: rgba(2, 2, 3, 0.55);
+}
+
+.template__cl__amsterdam.blue .cover-letter__date:before,
+.template__cl__amsterdam.blue .cover-letter__greeting:before {
+    background: rgba(2, 2, 3, 0.55);
+}
+
+.template__cl__amsterdam.blue .cover-letter__name {
+    color: #020203;
+}
+
+.template__cl__amsterdam.blue .cover-letter__recipient {
+    color: rgba(2, 2, 3, 0.55);
+}
+
+.template__cl__amsterdam.blue .cover-letter__recipient p:first-of-type {
+    color: #020203;
+}
+
+.template__cl__amsterdam.red {
+    background-image: linear-gradient(to right,
+            #ffffff 50%,
+            #bfa9a9 50%);
+    color: #423b3b;
+}
+
+.template__cl__amsterdam.red .cover-letter__date {
+    color: rgba(66, 59, 59, 0.55);
+}
+
+.template__cl__amsterdam.red .cover-letter__date:before,
+.template__cl__amsterdam.red .cover-letter__greeting:before {
+    background: rgba(66, 59, 59, 0.55);
+}
+
+.template__cl__amsterdam.red .cover-letter__name {
+    color: #423b3b;
+}
+
+.template__cl__amsterdam.red .cover-letter__recipient {
+    color: rgba(66, 59, 59, 0.55);
+}
+
+.template__cl__amsterdam.red .cover-letter__recipient p:first-of-type {
+    color: #423b3b;
+}
+
+.template__cl__amsterdam.grey {
+    background-image: linear-gradient(to right,
+            #ffffff 50%,
+            #a3a3a3 50%);
+    color: #424242;
+}
+
+.template__cl__amsterdam.grey .cover-letter__date {
+    color: rgba(66, 66, 66, 0.55);
+}
+
+.template__cl__amsterdam.grey .cover-letter__date:before,
+.template__cl__amsterdam.grey .cover-letter__greeting:before {
+    background: rgba(66, 66, 66, 0.55);
+}
+
+.template__cl__amsterdam.grey .cover-letter__name {
+    color: #424242;
+}
+
+.template__cl__amsterdam.grey .cover-letter__recipient {
+    color: rgba(66, 66, 66, 0.55);
+}
+
+.template__cl__amsterdam.grey .cover-letter__recipient p:first-of-type {
+    color: #424242;
+}
+
+.template__cl__amsterdam.brown {
+    background-image: linear-gradient(to right,
+            #ffffff 50%,
+            #bfb4a7 50%);
+    color: #423e3a;
+}
+
+.template__cl__amsterdam.brown .cover-letter__date {
+    color: rgba(66, 62, 58, 0.55);
+}
+
+.template__cl__amsterdam.brown .cover-letter__date:before,
+.template__cl__amsterdam.brown .cover-letter__greeting:before {
+    background: rgba(66, 62, 58, 0.55);
+}
+
+.template__cl__amsterdam.brown .cover-letter__name {
+    color: #423e3a;
+}
+
+.template__cl__amsterdam.brown .cover-letter__recipient {
+    color: rgba(66, 62, 58, 0.55);
+}
+
+.template__cl__amsterdam.brown .cover-letter__recipient p:first-of-type {
+    color: #423e3a;
+}
+
+.template__cl__amsterdam.cream {
+    background-image: linear-gradient(to right,
+            #ffffff 50%,
+            #dcd1cc 50%);
+    color: #3e423d;
+}
+
+.template__cl__amsterdam.cream .cover-letter__date {
+    color: rgba(62, 66, 61, 0.55);
+}
+
+.template__cl__amsterdam.cream .cover-letter__date:before,
+.template__cl__amsterdam.cream .cover-letter__greeting:before {
+    background: rgba(62, 66, 61, 0.55);
+}
+
+.template__cl__amsterdam.cream .cover-letter__name {
+    color: #3e423d;
+}
+
+.template__cl__amsterdam.cream .cover-letter__recipient {
+    color: rgba(62, 66, 61, 0.55);
+}
+
+.template__cl__amsterdam.cream .cover-letter__recipient p:first-of-type {
+    color: #3e423d;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             TEMPLATE PROPERTIES                            */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                              STATIC PROPERTIES                             */
+/* -------------------------------------------------------------------------- */
+.template__cl__amsterdam {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 24px 0 64px !important;
+    min-height: inherit;
+}
+
+.template__cl__amsterdam.multiPage.A4.numPages-1 {
+    height: 1123.2px;
+}
+
+.template__cl__amsterdam.multiPage.A4.numPages-2 {
+    height: 2246.4px;
+}
+
+.template__cl__amsterdam.multiPage.A4.numPages-3 {
+    height: 3369.6px;
+}
+
+.template__cl__amsterdam.multiPage.A4.numPages-4 {
+    height: 4492.8px;
+}
+
+.template__cl__amsterdam.multiPage.A4.numPages-5 {
+    height: 5616px;
+}
+
+.template__cl__amsterdam.multiPage.A4.numPages-6 {
+    height: 6739.2px;
+}
+
+.template__cl__amsterdam.multiPage.A4.numPages-7 {
+    height: 7862.4px;
+}
+
+.template__cl__amsterdam.multiPage.A4.numPages-8 {
+    height: 8985.6px;
+}
+
+.template__cl__amsterdam.multiPage.A4.numPages-9 {
+    height: 10108.8px;
+}
+
+.template__cl__amsterdam.multiPage.A4.numPages-10 {
+    height: 11232px;
+}
+
+.template__cl__amsterdam.multiPage.letter.numPages-1 {
+    height: 1056px;
+}
+
+.template__cl__amsterdam.multiPage.letter.numPages-2 {
+    height: 2112px;
+}
+
+.template__cl__amsterdam.multiPage.letter.numPages-3 {
+    height: 3168px;
+}
+
+.template__cl__amsterdam.multiPage.letter.numPages-4 {
+    height: 4224px;
+}
+
+.template__cl__amsterdam.multiPage.letter.numPages-5 {
+    height: 5280px;
+}
+
+.template__cl__amsterdam.multiPage.letter.numPages-6 {
+    height: 6336px;
+}
+
+.template__cl__amsterdam.multiPage.letter.numPages-7 {
+    height: 7392px;
+}
+
+.template__cl__amsterdam.multiPage.letter.numPages-8 {
+    height: 8448px;
+}
+
+.template__cl__amsterdam.multiPage.letter.numPages-9 {
+    height: 9504px;
+}
+
+.template__cl__amsterdam.multiPage.letter.numPages-10 {
+    height: 10560px;
+}
+
+.template__cl__amsterdam .wrapper {
+    display: inherit;
+    flex-direction: column;
+    gap: 24px;
+    border-left: 2px solid rgba(153, 162, 152, 0.33);
+    background: #ffffff;
+    padding: 64px 64px 64px 16px;
+    width: inherit;
+    max-width: 100%;
+}
+
+.template__cl__amsterdam .header {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    word-break: break-word;
+}
+
+.template__cl__amsterdam .header__left {
+    max-width: 70%;
+    font-size: 32px;
+    letter-spacing: -1.354px;
+    text-transform: uppercase;
+}
+
+.template__cl__amsterdam .header__left__wrapper span:last-child {
+    margin-left: 12px;
+}
+
+.template__cl__amsterdam .header__right {
+    align-self: stretch;
+    max-width: 30%;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.template__cl__amsterdam .content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.template__cl__amsterdam .content .date-recipient {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.template__cl__amsterdam .content .body {
+    font-weight: 400;
+}
+
+.template__cl__amsterdam .content .body .date-recipient {
+    margin-bottom: 40px;
+}
+
+.template__cl__amsterdam .cover-letter__date,
+.template__cl__amsterdam .cover-letter__recipient {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.template__cl__amsterdam .cover-letter__date>*,
+.template__cl__amsterdam .cover-letter__recipient>* {
+    font-style: normal;
+}
+
+.template__cl__amsterdam .cover-letter__date {
+    margin-bottom: 12px;
+}
+
+.template__cl__amsterdam .cover-letter__date:before,
+.template__cl__amsterdam .cover-letter__greeting:before {
+    position: absolute;
+    margin-left: -18px;
+    border-radius: 2px;
+    width: 2px;
+    height: 24px;
+    content: "";
+}
+
+.template__cl__amsterdam .cover-letter__name {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.template__cl__amsterdam .cover-letter__name--signature,
+.template__cl__amsterdam .cover-letter__name--titleName,
+.template__cl__amsterdam .cover-letter__name--firstName,
+.template__cl__amsterdam .cover-letter__name--lastName {
+    font-weight: inherit;
+    text-transform: uppercase;
+    word-break: break-word;
+}
+
+.template__cl__amsterdam .cover-letter__recipient {
+    text-transform: capitalize;
+}
+
+.template__cl__amsterdam .cover-letter__signature {
+    font-style: normal;
+}
+
+.template__cl__amsterdam .cover-letter__city--span {
+    display: block;
+}
+
+.cover-classic {
+    display: flex;
+}
+
+.cover-classic {
+    padding: 36px 72px !important;
+    color: #303030;
+    font-family: "Noto Serif", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+    flex-direction: column;
+}
+
+.cover-classic.font-language--zh-CN {
+    font-family: "Noto Serif SC";
+}
+
+.cover-classic.font-language--ja-JP {
+    font-family: "Noto Serif JP";
+}
+
+.cover-classic .cover-letter__header {
+    font-size: 10px;
+    color: #303030;
+}
+
+.cover-classic .cover-letter__title,
+.cover-classic .cover-letter__name {
+    color: #303030;
+}
+
+.cover-classic .cover-letter__date {
+    padding: 0;
+}
+
+.cover-classic .cover-letter__name {
+    margin: 0 0 16px 0;
+}
+
+.cover-classic .cover-letter__contact {
+    padding: 16px;
+    align-self: flex-end;
+}
+
+.cover-contemporary {
+    display: flex;
+}
+
+.cover-contemporary {
+    padding: 36px 72px !important;
+    color: #303030;
+    font-family: "Noto Serif", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+    flex-direction: column;
+}
+
+.cover-contemporary.font-language--zh-CN {
+    font-family: "Noto Serif SC";
+}
+
+.cover-contemporary.font-language--ja-JP {
+    font-family: "Noto Serif JP";
+}
+
+.cover-contemporary .cover-letter__header {
+    font-size: 10px;
+    color: #303030;
+}
+
+.cover-contemporary .cover-letter__date {
+    padding: 0;
+}
+
+.cover-contemporary .cover-letter__name {
+    margin: 0 0 16px 0;
+}
+
+.cover-contemporary .cover-letter__contact {
+    color: #ffffff;
+    display: inline-block;
+    padding: 16px;
+    align-self: flex-end;
+}
+
+.cover-template-contemporaryBlue .cover-letter__contact {
+    color: #ffffff;
+    background: #3176e0;
+}
+
+.cover-template-contemporaryRed .cover-letter__contact {
+    color: #ffffff;
+    background: #d0021b;
+}
+
+.cover-cosmopolitan {
+    padding: 36px 72px !important;
+    color: #303030;
+    font-family: "Noto Serif", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.cover-cosmopolitan.font-language--zh-CN {
+    font-family: "Noto Serif SC";
+}
+
+.cover-cosmopolitan.font-language--ja-JP {
+    font-family: "Noto Serif JP";
+}
+
+.cover-cosmopolitan .cover-letter__title {
+    color: #3176e0;
+}
+
+.cover-cosmopolitan .cover-letter__header {
+    font-size: 10px;
+    color: #303030;
+}
+
+.cover-cosmopolitan .cover-letter__date {
+    background-color: #3176e0;
+    color: #ffffff;
+}
+
+.cover-cosmopolitan .cover-letter__name {
+    margin: 16px 0;
+    color: #3176e0;
+}
+
+.cover-cosmopolitan .cover-letter__contact {
+    align-self: flex-end;
+}
+
+.cover-elegant {
+    display: flex;
+}
+
+.cover-elegant {
+    padding: 36px 72px !important;
+    color: #303030;
+    font-family: "Noto Serif", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+    flex-direction: column;
+}
+
+.cover-elegant.font-language--zh-CN {
+    font-family: "Noto Serif SC";
+}
+
+.cover-elegant.font-language--ja-JP {
+    font-family: "Noto Serif JP";
+}
+
+.cover-elegant .cover-letter__header {
+    font-size: 10px;
+    color: #303030;
+}
+
+.cover-elegant .cover-letter__date {
+    padding: 0;
+}
+
+.cover-elegant .cover-letter__title {
+    color: #6e5750;
+}
+
+.cover-elegant .cover-letter__name {
+    margin: 0 0 16px 0;
+    color: #6e5750;
+}
+
+.cover-elegant .cover-letter__contact {
+    padding: 16px;
+    align-self: flex-end;
+    border: 2px dashed rgba(110, 87, 80, 0.2);
+}
+
+.cover-executive {
+    display: flex;
+}
+
+.cover-executive {
+    padding: 36px 72px !important;
+    color: #303030;
+    font-family: "Noto Serif", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+    flex-direction: column;
+}
+
+.cover-executive.font-language--zh-CN {
+    font-family: "Noto Serif SC";
+}
+
+.cover-executive.font-language--ja-JP {
+    font-family: "Noto Serif JP";
+}
+
+.cover-executive .cover-letter__header {
+    font-size: 10px;
+    color: #303030;
+}
+
+.cover-executive .cover-letter__date {
+    padding: 0;
+}
+
+.cover-executive .cover-letter__name {
+    margin: 0 0 16px 0;
+}
+
+.cover-executive .cover-letter__contact {
+    align-self: flex-end;
+    padding-right: 16px;
+    border-right: 4px solid;
+}
+
+.cover-template-executiveBlue .cover-letter__contact {
+    border-color: #3176e0;
+}
+
+.cover-template-executiveGray .cover-letter__contact {
+    border-color: #9a9a9a;
+}
+
+.cover-template-executiveGreen .cover-letter__contact {
+    border-color: #17a095;
+}
+
+.cover-template-executiveRed .cover-letter__contact {
+    border-color: #d0021b;
+}
+
+.cover-modern .cover-letter__contact,
+.cover-modern .cover-letter__header {
+    display: flex;
+}
+
+.cover-modern .cover-letter__contact,
+.cover-modern .cover-letter__header {
+    justify-content: space-between;
+}
+
+.cover-modern .cover-letter__header {
+    flex-direction: row-reverse;
+}
+
+.cover-modern {
+    padding: 86px 164px 86px 86px !important;
+}
+
+.cover-modern.font-language--zh-CN {
+    font-family: "Noto Serif SC";
+}
+
+.cover-modern.font-language--ja-JP {
+    font-family: "Noto Serif JP";
+}
+
+.cover-modern .cover-letter {
+    width: 356px;
+}
+
+.cover-modern .cover-letter__title span {
+    font-weight: normal;
+}
+
+.cover-modern .cover-letter__contact {
+    font-family: "Roboto Mono", sans-serif, "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+    font-size: 11.5px;
+    color: #3176e0;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 3px solid #3176e0;
+}
+
+.cover-modern .cover-letter__contact__column {
+    width: 50%;
+}
+
+.cover-modern .cover-letter__contact__column:last-child {
+    text-align: right;
+}
+
+.cover-modern .cover-letter__contact__column:last-child p:first-child {
+    min-height: 50%;
+    line-height: 2;
+}
+
+.cover-modern .cover-letter__contact__column:first-child {
+    text-align: left;
+}
+
+.cover-modern .cover-letter__contact__column:first-child .cover-letter__title {
+    min-height: 50%;
+}
+
+.cover-modern .cover-letter__header {
+    align-items: flex-start;
+    font-family: "Roboto Mono", sans-serif, "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+    font-size: 10px;
+    color: #303030;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid rgba(49, 118, 224, 0.2);
+}
+
+.cover-modern .cover-letter__header section {
+    width: 50%;
+}
+
+.cover-modern .cover-letter__date {
+    text-transform: uppercase;
+    float: right;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.cover-modern .cover-letter__name {
+    font-family: "Roboto Mono", sans-serif, "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.cover-modern .cover-letter__name--signature {
+    color: #3176e0;
+}
+
+.cover-modern .cover-letter__content {
+    font-family: "Roboto Mono", sans-serif, "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+    font-size: 11.5px;
+    color: #303030;
+    width: auto;
+}
+
+.cover-modern .cover-letter__signature,
+.cover-modern .cover-letter__name--signature {
+    text-align: right;
+}
+
+.cover-modern .cover-letter__signature {
+    font-style: normal;
+}
+
+.cover-modern .cover-letter__recipient {
+    margin-bottom: 0;
+}
+
+.cover-modern .cover-letter__recipient p,
+.cover-modern .cover-letter__recipient span {
+    font-style: normal;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 LINE HEIGHT                                */
+/* -------------------------------------------------------------------------- */
+.template__cl__munich.line-spacing--50 {
+    line-height: 13px;
+}
+
+.template__cl__munich.line-spacing--50 .cover-letter__name--signature {
+    padding-top: -8px;
+}
+
+.template__cl__munich.line-spacing--75 {
+    line-height: 15px;
+}
+
+.template__cl__munich.line-spacing--75 .cover-letter__name--signature {
+    padding-top: -4px;
+}
+
+.template__cl__munich.line-spacing--100 {
+    line-height: 17px;
+}
+
+.template__cl__munich.line-spacing--100 .cover-letter__name--signature {
+    padding-top: 0px;
+}
+
+.template__cl__munich.line-spacing--125 {
+    line-height: 19px;
+}
+
+.template__cl__munich.line-spacing--125 .cover-letter__name--signature {
+    padding-top: 4px;
+}
+
+.template__cl__munich.line-spacing--150 {
+    line-height: 21px;
+}
+
+.template__cl__munich.line-spacing--150 .cover-letter__name--signature {
+    padding-top: 8px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 FONT FAMILY                                */
+/* -------------------------------------------------------------------------- */
+.template__cl__munich.elegant {
+    font-family: "roboto", serif, "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__cl__munich.elegant .header__left {
+    font-family: "Libre Bodoni", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew", serif, "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+    letter-spacing: 3px;
+}
+
+.template__cl__munich.modern {
+    font-family: "roboto", serif, "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__cl__munich.modern .header__left {
+    font-family: "Oswald", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew", serif, "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+    letter-spacing: 3px;
+}
+
+.template__cl__munich.classic {
+    font-family: "roboto", serif, "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__cl__munich.classic .header__left {
+    font-family: "Bellefair", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew", serif, "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+    letter-spacing: 3px;
+}
+
+.template__cl__munich.tech {
+    font-family: "roboto", serif, "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+    font-family: "Roboto Mono", serif, "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+}
+
+.template__cl__munich.tech .header__left {
+    font-family: "Roboto Condensed", "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew", serif, "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+    letter-spacing: 3px;
+    letter-spacing: 1.5px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  FONT SIZE                                 */
+/* -------------------------------------------------------------------------- */
+.template__cl__munich.small {
+    font-size: 9px;
+}
+
+.template__cl__munich.small .cover-letter__name,
+.template__cl__munich.small .cover-letter__greeting,
+.template__cl__munich.small .cover-letter__name--signature {
+    font-size: 11px;
+}
+
+.template__cl__munich.medium {
+    font-size: 11px;
+}
+
+.template__cl__munich.medium .cover-letter__name,
+.template__cl__munich.medium .cover-letter__greeting,
+.template__cl__munich.medium .cover-letter__name--signature {
+    font-size: 13px;
+}
+
+.template__cl__munich.large {
+    font-size: 13px;
+}
+
+.template__cl__munich.large .cover-letter__name,
+.template__cl__munich.large .cover-letter__greeting,
+.template__cl__munich.large .cover-letter__name--signature {
+    font-size: 15px;
+}
+
+.template__cl__munich {
+    width: 100%;
+    display: flex;
+    min-height: inherit;
+    flex-direction: column;
+    padding: 72px !important;
+    color: #3d4042;
+}
+
+.template__cl__munich .header {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 60px;
+    position: relative;
+    border-bottom: 2px solid #3d404233;
+}
+
+.template__cl__munich .header__left {
+    width: 70%;
+    padding-right: 20px;
+    word-break: keep-all;
+    font-size: 42px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    line-height: 56px;
+}
+
+.template__cl__munich .header__right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    gap: 2px;
+}
+
+.template__cl__munich .header__right p:last-child {
+    margin-top: 1px;
+}
+
+.template__cl__munich .content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+}
+
+.template__cl__munich .content__left {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 35px;
+    padding-top: 35px;
+}
+
+.template__cl__munich .content__right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+    padding-top: 35px;
+    border-left: 2px solid #3d404233;
+}
+
+.template__cl__munich .content p {
+    margin: 0;
+}
+
+.template__cl__munich .content .cover-letter__name--signature,
+.template__cl__munich .content .cover-letter__greeting,
+.template__cl__munich .content .cover-letter__name {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.67px;
+    min-height: 40px;
+    margin: 0;
+}
+
+.template__cl__munich .content .cover-letter__date {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    padding: 24px 0 0 0;
+    border-top: 2px solid #3d404233;
+}
+
+.template__cl__munich .content .cover-letter__recipient {
+    font-size: unset;
+    margin-bottom: 35px;
+}
+
+.template__cl__munich .content .cover-letter__recipient p {
+    font-style: normal;
+}
+
+.template__cl__munich .content .cover-letter__recipient span {
+    font-style: normal;
+}
+
+.template__cl__munich .content .cover-letter__body {
+    margin: 0 0 14px 0;
+}
+
+.template__cl__munich .content .cover-letter__signature {
+    margin: 0;
+    font-style: normal;
+}
+
+.template__cl__munich .content .cover-letter__recipient {
+    display: flex;
+    flex-direction: column;
+}
+
+.template__cl__munich .content .cover-letter__recipient__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.template__cl__munich .content .cover-letter__recipient span:after {
+    content: " ";
+}
+
+.cover-professional {
+    display: flex;
+}
+
+.cover-professional {
+    padding: 36px 72px !important;
+    color: #303030;
+    font-family: "Noto Serif", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+    flex-direction: column;
+}
+
+.cover-professional.font-language--zh-CN {
+    font-family: "Noto Serif SC";
+}
+
+.cover-professional.font-language--ja-JP {
+    font-family: "Noto Serif JP";
+}
+
+.cover-professional .cover-letter__header {
+    font-size: 10px;
+    color: #303030;
+}
+
+.cover-professional .cover-letter__title,
+.cover-professional .cover-letter__name {
+    color: #3176e0;
+}
+
+.cover-professional .cover-letter__date {
+    padding: 0;
+}
+
+.cover-professional .cover-letter__name {
+    margin: 0 0 16px 0;
+}
+
+.cover-professional .cover-letter__contact {
+    padding: 16px;
+    align-self: flex-end;
+}
+
+.cover-simple .cover-letter__contact,
+.cover-simple #date-information {
+    display: flex;
+}
+
+.cover-simple #date-information {
+    align-items: center;
+    justify-content: center;
+}
+
+.cover-simple .cover-letter__contact {
+    justify-content: space-between;
+}
+
+.cover-simple {
+    padding: 64px 128px !important;
+}
+
+.cover-simple #date-information {
+    line-height: 0;
+}
+
+.cover-simple.font-language--zh-CN {
+    font-family: "Noto Serif SC";
+}
+
+.cover-simple.font-language--ja-JP {
+    font-family: "Noto Serif JP";
+}
+
+.cover-simple .cover-letter {
+    width: 356px;
+}
+
+.cover-simple .cover-letter__contact {
+    font-family: "Libre Baskerville", sans-serif, "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+    font-size: 11.5px;
+    color: #6e5750;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #6e5750;
+    outline: none;
+    line-height: 0;
+    margin-bottom: 0;
+}
+
+.cover-simple .cover-letter__contact__column {
+    width: 50%;
+}
+
+.cover-simple .cover-letter__contact__column:last-child {
+    text-align: right;
+}
+
+.cover-simple .cover-letter__contact__column:last-child p:first-child {
+    min-height: 50%;
+    line-height: 2;
+}
+
+.cover-simple .cover-letter__contact__column:first-child {
+    text-align: left;
+}
+
+.cover-simple .cover-letter__contact__column:first-child .cover-letter__title {
+    min-height: 50%;
+}
+
+.cover-simple .cover-letter__header {
+    font-family: "Libre Baskerville", sans-serif, "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+    font-size: 10px;
+    color: #303030;
+}
+
+.cover-simple .cover-letter__date {
+    background-color: #6e5750;
+    font-family: "Libre Baskerville", sans-serif, "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+    font-size: 11.5px;
+    color: #ffffff;
+    padding: 0 5px;
+    line-height: 20px;
+}
+
+.cover-simple .cover-letter__name {
+    font-family: "Libre Baskerville", sans-serif, "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.cover-simple .cover-letter__recipient {
+    font-family: "Libre Baskerville", sans-serif, "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+    font-size: 10px;
+    text-align: center;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid rgba(110, 87, 80, 0.2);
+}
+
+.cover-simple .cover-letter__recipient p,
+.cover-simple .cover-letter__recipient span {
+    font-style: normal;
+}
+
+.cover-simple .cover-letter__content {
+    width: auto;
+    font-family: "Libre Baskerville", sans-serif, "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+    font-size: 11.5px;
+    color: #303030;
+}
+
+.cover-simple .cover-letter__signature p {
+    font-style: normal;
+}
+
+.cover-simple .cover-letter__signature,
+.cover-simple .cover-letter__name--signature {
+    text-align: center;
+}
+
+.cover-simple .cover-letter__name--signature {
+    color: #6e5750;
+}
+
+.template__occupation,
+.template__section__position,
+.template__section__degree,
+.template__section__subtitle {
+    font-weight: 700;
+}
+
+.template__section__experience .template__section__startDate,
+.template__section__experience .template__section__endDate,
+.template__section__education .template__section__startDate,
+.template__section__education .template__section__endDate,
+.template__section__company,
+.template__section__college {
+    font-style: italic;
+    margin-top: 3px;
+}
+
+.template__section--twoColumns,
+.template__header--twoColumns {
+    display: flex;
+}
+
+.template__header--twoColumns {
+    justify-content: space-between;
+}
+
+.template__section__simple--border {
+    border-bottom: 1px solid rgba(48, 48, 48, 0.15);
+}
+
+.template * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.template ul,
+.template ol {
+    margin-bottom: 8px;
+}
+
+.template ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.template ul li {
+    position: relative;
+}
+
+.template ul li:before {
+    content: "•";
+    position: absolute;
+    left: -12px;
+}
+
+.template ol {
+    padding-left: 20px;
+    list-style-position: outside;
+}
+
+.template__name span:first-child {
+    margin-right: 0.4em;
+}
+
+.template__header__photo {
+    min-width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.template__header__photo img {
+    width: 75px;
+    height: auto;
+}
+
+.template__header__photo.rounded {
+    border-radius: 100px;
+    height: 75px;
+    overflow: hidden;
+}
+
+.template__header .template__section__simple {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+    padding-left: 0;
+}
+
+.template__section__title {
+    page-break-after: avoid;
+}
+
+.template__section__info__value {
+    word-break: break-all;
+}
+
+.template__section__simple div {
+    margin-bottom: 8px;
+}
+
+.template__section__simple--border {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+}
+
+.template__section__description {
+    margin-top: 8px;
+    word-break: break-word;
+}
+
+.template__section__description div {
+    margin-bottom: 8px;
+}
+
+.template__section__experience .template__section__startDate,
+.template__section__experience .template__section__endDate,
+.template__section__education .template__section__startDate,
+.template__section__education .template__section__endDate {
+    display: inline;
+}
+
+.template__section__experience .template__section__endDate:before,
+.template__section__education .template__section__endDate:before {
+    content: " - ";
+}
+
+.template__occupation {
+    font-size: 11.5px;
+    margin-bottom: 5px;
+}
+
+.template__name {
+    overflow-wrap: anywhere;
+}
+
+.template .noValue {
+    opacity: 0.5;
+}
+
+.resume-container.letter {
+    min-height: 1056px;
+    width: 816px;
+    box-sizing: border-box;
+}
+
+.resume-container.A4 {
+    width: 793.92px;
+    min-height: 1123.2px;
+}
+
+.cover-letter__greeting {
+    margin-bottom: 8px;
+}
+
+.cover-letter__signature {
+    margin-top: 16px;
+}
+
+.template__global {
+    display: none;
+}
+
+.template__european2023.brown .template__european2023__column__left {
+    background: #003399;
+}
+
+.template__european2023.brown .template__european2023__title .template__nameOccupation .template__name {
+    color: #3f4551;
+}
+
+.template__european2023.brown .template__european2023__title .template__nameOccupation .template__occupation {
+    color: #98a4be;
+}
+
+.template__european2023.brown .template__european2023__contact svg {
+    fill: #003399;
+}
+
+.template__european2023.brown .template__european2023__languages ul li:before,
+.template__european2023.brown .template__european2023__skills ul li:before,
+.template__european2023.brown .template__european2023__objective ul li:before {
+    background-color: #4c74c4;
+}
+
+.template__european2023.brown .template__european2023__objective,
+.template__european2023.brown .template__european2023__contact,
+.template__european2023.brown .template__european2023__skills,
+.template__european2023.brown .template__european2023__languages {
+    color: rgba(255, 255, 255, 0.7490196078);
+}
+
+.template__european2023.brown .template__european2023__objective .template__section__title,
+.template__european2023.brown .template__european2023__contact .template__section__title,
+.template__european2023.brown .template__european2023__skills .template__section__title,
+.template__european2023.brown .template__european2023__languages .template__section__title {
+    color: #ffffff;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.template__european2023.brown .template__european2023__education .template__section__right,
+.template__european2023.brown .template__european2023__projects .template__section__right,
+.template__european2023.brown .template__european2023__achievements .template__section__right,
+.template__european2023.brown .template__european2023__experience .template__section__right,
+.template__european2023.brown .template__european2023__honors .template__section__right,
+.template__european2023.brown .template__european2023__publications .template__section__right,
+.template__european2023.brown .template__european2023__custom .template__section__right,
+.template__european2023.brown .template__european2023__references .template__section__right,
+.template__european2023.brown .template__european2023__certifications .template__section__right {
+    color: #3f4551;
+}
+
+.template__european2023.brown .template__european2023__education .template__section__title,
+.template__european2023.brown .template__european2023__projects .template__section__title,
+.template__european2023.brown .template__european2023__achievements .template__section__title,
+.template__european2023.brown .template__european2023__experience .template__section__title,
+.template__european2023.brown .template__european2023__honors .template__section__title,
+.template__european2023.brown .template__european2023__publications .template__section__title,
+.template__european2023.brown .template__european2023__custom .template__section__title,
+.template__european2023.brown .template__european2023__references .template__section__title,
+.template__european2023.brown .template__european2023__certifications .template__section__title {
+    color: #003399;
+    font-weight: 600;
+    border-top: 2px solid rgba(0, 51, 153, 0.2);
+}
+
+.template__european2023.brown .template__european2023__experience .template__section__left,
+.template__european2023.brown .template__european2023__education .template__section__left {
+    color: #003399;
+}
+
+.template__european2023.brown .template__european2023__experience .template__section__left:before,
+.template__european2023.brown .template__european2023__education .template__section__left:before {
+    background-color: #003399;
+}
+
+.template__european2023.brown .template__european2023__experience .template__section__left:after,
+.template__european2023.brown .template__european2023__education .template__section__left:after {
+    border-left: 1px solid #003399;
+}
+
+.template__european2023.brown .europeanFormat>g {
+    fill: #ffffff;
+}
+
+.template__european2023.brown .europeanShape {
+    fill: #dce6f1;
+}
+
+.template__european2023.blue .template__european2023__column__left {
+    background: #dce6f1;
+}
+
+.template__european2023.blue .template__european2023__title .template__nameOccupation .template__name {
+    color: #3f4551;
+}
+
+.template__european2023.blue .template__european2023__title .template__nameOccupation .template__occupation {
+    color: rgba(0, 51, 153, 0.3294117647);
+}
+
+.template__european2023.blue .template__european2023__contact svg {
+    fill: #dce6f1;
+}
+
+.template__european2023.blue .template__european2023__languages ul li:before,
+.template__european2023.blue .template__european2023__skills ul li:before,
+.template__european2023.blue .template__european2023__objective ul li:before {
+    background-color: #86a2d6;
+}
+
+.template__european2023.blue .template__european2023__objective,
+.template__european2023.blue .template__european2023__contact,
+.template__european2023.blue .template__european2023__skills,
+.template__european2023.blue .template__european2023__languages {
+    color: #5f6f90;
+}
+
+.template__european2023.blue .template__european2023__objective .template__section__title,
+.template__european2023.blue .template__european2023__contact .template__section__title,
+.template__european2023.blue .template__european2023__skills .template__section__title,
+.template__european2023.blue .template__european2023__languages .template__section__title {
+    color: rgba(0, 51, 153, 0.5019607843);
+    border-top: 2px solid rgba(0, 51, 153, 0.1490196078);
+}
+
+.template__european2023.blue .template__european2023__education .template__section__right,
+.template__european2023.blue .template__european2023__projects .template__section__right,
+.template__european2023.blue .template__european2023__achievements .template__section__right,
+.template__european2023.blue .template__european2023__experience .template__section__right,
+.template__european2023.blue .template__european2023__honors .template__section__right,
+.template__european2023.blue .template__european2023__publications .template__section__right,
+.template__european2023.blue .template__european2023__custom .template__section__right,
+.template__european2023.blue .template__european2023__references .template__section__right,
+.template__european2023.blue .template__european2023__certifications .template__section__right {
+    color: #3f4551;
+}
+
+.template__european2023.blue .template__european2023__education .template__section__title,
+.template__european2023.blue .template__european2023__projects .template__section__title,
+.template__european2023.blue .template__european2023__achievements .template__section__title,
+.template__european2023.blue .template__european2023__experience .template__section__title,
+.template__european2023.blue .template__european2023__honors .template__section__title,
+.template__european2023.blue .template__european2023__publications .template__section__title,
+.template__european2023.blue .template__european2023__custom .template__section__title,
+.template__european2023.blue .template__european2023__references .template__section__title,
+.template__european2023.blue .template__european2023__certifications .template__section__title {
+    color: rgba(0, 51, 153, 0.5019607843);
+    font-weight: 600;
+    border-top: 2px solid rgba(0, 51, 153, 0.2);
+}
+
+.template__european2023.blue .template__european2023__experience .template__section__left,
+.template__european2023.blue .template__european2023__education .template__section__left {
+    color: #003399;
+}
+
+.template__european2023.blue .template__european2023__experience .template__section__left:before,
+.template__european2023.blue .template__european2023__education .template__section__left:before {
+    background-color: #003399;
+}
+
+.template__european2023.blue .template__european2023__experience .template__section__left:after,
+.template__european2023.blue .template__european2023__education .template__section__left:after {
+    border-left: 1px solid #003399;
+}
+
+.template__european2023.blue .europeanFormat>g {
+    fill: rgba(0, 51, 153, 0.5019607843);
+}
+
+.template__european2023.blue .europeanShape {
+    fill: #dce6f1;
+}
+
+.template__european2023.white .template__european2023__column__left {
+    background: #ffffff;
+    border-right: 1px solid #dce6f1;
+}
+
+.template__european2023.white .template__european2023__title .template__nameOccupation .template__name {
+    color: #3f4551;
+}
+
+.template__european2023.white .template__european2023__title .template__nameOccupation .template__occupation {
+    color: rgba(0, 51, 153, 0.3294117647);
+}
+
+.template__european2023.white .template__european2023__contact svg {
+    fill: #ffffff;
+}
+
+.template__european2023.white .template__european2023__languages ul li:before,
+.template__european2023.white .template__european2023__skills ul li:before,
+.template__european2023.white .template__european2023__objective ul li:before {
+    background-color: rgba(0, 51, 153, 0.5019607843);
+}
+
+.template__european2023.white .template__european2023__objective,
+.template__european2023.white .template__european2023__contact,
+.template__european2023.white .template__european2023__skills,
+.template__european2023.white .template__european2023__languages {
+    color: #3f4551;
+}
+
+.template__european2023.white .template__european2023__objective .template__section__title,
+.template__european2023.white .template__european2023__contact .template__section__title,
+.template__european2023.white .template__european2023__skills .template__section__title,
+.template__european2023.white .template__european2023__languages .template__section__title {
+    color: rgba(0, 51, 153, 0.5019607843);
+    border-top: 2px solid #dce6f1;
+}
+
+.template__european2023.white .template__european2023__education .template__section__right,
+.template__european2023.white .template__european2023__projects .template__section__right,
+.template__european2023.white .template__european2023__achievements .template__section__right,
+.template__european2023.white .template__european2023__experience .template__section__right,
+.template__european2023.white .template__european2023__honors .template__section__right,
+.template__european2023.white .template__european2023__publications .template__section__right,
+.template__european2023.white .template__european2023__custom .template__section__right,
+.template__european2023.white .template__european2023__references .template__section__right,
+.template__european2023.white .template__european2023__certifications .template__section__right {
+    color: #3f4551;
+}
+
+.template__european2023.white .template__european2023__education .template__section__title,
+.template__european2023.white .template__european2023__projects .template__section__title,
+.template__european2023.white .template__european2023__achievements .template__section__title,
+.template__european2023.white .template__european2023__experience .template__section__title,
+.template__european2023.white .template__european2023__honors .template__section__title,
+.template__european2023.white .template__european2023__publications .template__section__title,
+.template__european2023.white .template__european2023__custom .template__section__title,
+.template__european2023.white .template__european2023__references .template__section__title,
+.template__european2023.white .template__european2023__certifications .template__section__title {
+    color: rgba(0, 51, 153, 0.5019607843);
+    font-weight: 600;
+    border-top: 2px solid rgba(0, 51, 153, 0.2);
+}
+
+.template__european2023.white .template__european2023__experience .template__section__left,
+.template__european2023.white .template__european2023__education .template__section__left {
+    color: #003399;
+}
+
+.template__european2023.white .template__european2023__experience .template__section__left:before,
+.template__european2023.white .template__european2023__education .template__section__left:before {
+    background-color: #003399;
+}
+
+.template__european2023.white .template__european2023__experience .template__section__left:after,
+.template__european2023.white .template__european2023__education .template__section__left:after {
+    border-left: 1px solid #003399;
+}
+
+.template__european2023.white .europeanFormat>g {
+    fill: rgba(0, 51, 153, 0.5019607843);
+}
+
+.template__european2023.white .europeanShape {
+    fill: #dce6f1;
+}
+
+.template__european2023.dark-blue .template__european2023__column__left {
+    background: #05173d;
+}
+
+.template__european2023.dark-blue .template__european2023__title .template__nameOccupation .template__name {
+    color: #001134;
+}
+
+.template__european2023.dark-blue .template__european2023__title .template__nameOccupation .template__occupation {
+    color: #98a4be;
+}
+
+.template__european2023.dark-blue .template__european2023__contact svg {
+    fill: #05173d;
+}
+
+.template__european2023.dark-blue .template__european2023__languages ul li:before,
+.template__european2023.dark-blue .template__european2023__skills ul li:before,
+.template__european2023.dark-blue .template__european2023__objective ul li:before {
+    background-color: #4c74c4;
+}
+
+.template__european2023.dark-blue .template__european2023__objective,
+.template__european2023.dark-blue .template__european2023__contact,
+.template__european2023.dark-blue .template__european2023__skills,
+.template__european2023.dark-blue .template__european2023__languages {
+    color: #d5e3ff;
+}
+
+.template__european2023.dark-blue .template__european2023__objective .template__section__title,
+.template__european2023.dark-blue .template__european2023__contact .template__section__title,
+.template__european2023.dark-blue .template__european2023__skills .template__section__title,
+.template__european2023.dark-blue .template__european2023__languages .template__section__title {
+    color: #ffffff;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.template__european2023.dark-blue .template__european2023__education .template__section__right,
+.template__european2023.dark-blue .template__european2023__projects .template__section__right,
+.template__european2023.dark-blue .template__european2023__achievements .template__section__right,
+.template__european2023.dark-blue .template__european2023__experience .template__section__right,
+.template__european2023.dark-blue .template__european2023__honors .template__section__right,
+.template__european2023.dark-blue .template__european2023__publications .template__section__right,
+.template__european2023.dark-blue .template__european2023__custom .template__section__right,
+.template__european2023.dark-blue .template__european2023__references .template__section__right,
+.template__european2023.dark-blue .template__european2023__certifications .template__section__right {
+    color: #001134;
+}
+
+.template__european2023.dark-blue .template__european2023__education .template__section__title,
+.template__european2023.dark-blue .template__european2023__projects .template__section__title,
+.template__european2023.dark-blue .template__european2023__achievements .template__section__title,
+.template__european2023.dark-blue .template__european2023__experience .template__section__title,
+.template__european2023.dark-blue .template__european2023__honors .template__section__title,
+.template__european2023.dark-blue .template__european2023__publications .template__section__title,
+.template__european2023.dark-blue .template__european2023__custom .template__section__title,
+.template__european2023.dark-blue .template__european2023__references .template__section__title,
+.template__european2023.dark-blue .template__european2023__certifications .template__section__title {
+    color: rgba(0, 51, 153, 0.5019607843);
+    font-weight: 600;
+    border-top: 2px solid rgba(0, 51, 153, 0.2);
+}
+
+.template__european2023.dark-blue .template__european2023__experience .template__section__left,
+.template__european2023.dark-blue .template__european2023__education .template__section__left {
+    color: #003399;
+}
+
+.template__european2023.dark-blue .template__european2023__experience .template__section__left:before,
+.template__european2023.dark-blue .template__european2023__education .template__section__left:before {
+    background-color: #003399;
+}
+
+.template__european2023.dark-blue .template__european2023__experience .template__section__left:after,
+.template__european2023.dark-blue .template__european2023__education .template__section__left:after {
+    border-left: 1px solid #003399;
+}
+
+.template__european2023.dark-blue .europeanFormat>g {
+    fill: #ffffff;
+}
+
+.template__european2023.dark-blue .europeanShape {
+    fill: #dce6f1;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 LINE HEIGHT                                */
+/* -------------------------------------------------------------------------- */
+.template__european2023.line-spacing--50 {
+    line-height: 14px;
+}
+
+.template__european2023.line-spacing--50 .template__european2023__title .template__nameOccupation .template__name {
+    line-height: 60px;
+}
+
+.template__european2023.line-spacing--50 .template__european2023__languages ul li:before,
+.template__european2023.line-spacing--50 .template__european2023__skills ul li:before,
+.template__european2023.line-spacing--50 .template__european2023__objective ul li:before {
+    top: 3.5px;
+}
+
+.template__european2023.line-spacing--50 .template__european2023__contact .withIcon .icon {
+    height: 14px;
+    align-items: center;
+}
+
+.template__european2023.line-spacing--50 .template__section__left {
+    line-height: 14px;
+}
+
+.template__european2023.line-spacing--75 {
+    line-height: 16px;
+}
+
+.template__european2023.line-spacing--75 .template__european2023__title .template__nameOccupation .template__name {
+    line-height: 60px;
+}
+
+.template__european2023.line-spacing--75 .template__european2023__languages ul li:before,
+.template__european2023.line-spacing--75 .template__european2023__skills ul li:before,
+.template__european2023.line-spacing--75 .template__european2023__objective ul li:before {
+    top: 5px;
+}
+
+.template__european2023.line-spacing--75 .template__european2023__contact .withIcon .icon {
+    height: 16px;
+    align-items: center;
+}
+
+.template__european2023.line-spacing--75 .template__section__left {
+    line-height: 16px;
+}
+
+.template__european2023.line-spacing--100 {
+    line-height: 18px;
+}
+
+.template__european2023.line-spacing--100 .template__european2023__title .template__nameOccupation .template__name {
+    line-height: 60px;
+}
+
+.template__european2023.line-spacing--100 .template__european2023__languages ul li:before,
+.template__european2023.line-spacing--100 .template__european2023__skills ul li:before,
+.template__european2023.line-spacing--100 .template__european2023__objective ul li:before {
+    top: 5px;
+}
+
+.template__european2023.line-spacing--100 .template__european2023__contact .withIcon .icon {
+    height: 18px;
+    align-items: center;
+}
+
+.template__european2023.line-spacing--100 .template__section__left {
+    line-height: 18px;
+}
+
+.template__european2023.line-spacing--125 {
+    line-height: 19px;
+}
+
+.template__european2023.line-spacing--125 .template__european2023__title .template__nameOccupation .template__name {
+    line-height: 60px;
+}
+
+.template__european2023.line-spacing--125 .template__european2023__languages ul li:before,
+.template__european2023.line-spacing--125 .template__european2023__skills ul li:before,
+.template__european2023.line-spacing--125 .template__european2023__objective ul li:before {
+    top: 8px;
+}
+
+.template__european2023.line-spacing--125 .template__european2023__contact .withIcon .icon {
+    height: 19px;
+    align-items: center;
+}
+
+.template__european2023.line-spacing--125 .template__section__left {
+    line-height: 19px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 FONT FAMILY                                */
+/* -------------------------------------------------------------------------- */
+.template__european2023.professional {
+    font-family: "Rubik", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__european2023.professional .template__name,
+.template__european2023.professional .template__occupation {
+    font-family: "Rubik", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__european2023.professional .template__section__date,
+.template__european2023.professional .template__section__degree,
+.template__european2023.professional .template__section__position,
+.template__european2023.professional .template__section__collegeLocation,
+.template__european2023.professional .template__section__companyLocation {
+    font-family: "Rubik", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__european2023.professional .template__section__title {
+    font-family: "Rubik", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__european2023.modern {
+    font-family: "Roboto", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__european2023.modern .template__name,
+.template__european2023.modern .template__occupation {
+    font-family: "Roboto Condensed", "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+}
+
+.template__european2023.modern .template__section__date,
+.template__european2023.modern .template__section__degree,
+.template__european2023.modern .template__section__position,
+.template__european2023.modern .template__section__collegeLocation,
+.template__european2023.modern .template__section__companyLocation {
+    font-family: "Roboto Condensed", "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+}
+
+.template__european2023.modern .template__section__title {
+    font-family: "Roboto Condensed", "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+}
+
+.template__european2023.classic {
+    font-family: "Noto Serif", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__european2023.classic .template__name,
+.template__european2023.classic .template__occupation {
+    font-family: "EB Garamond", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__european2023.classic .template__section__date,
+.template__european2023.classic .template__section__degree,
+.template__european2023.classic .template__section__position,
+.template__european2023.classic .template__section__collegeLocation,
+.template__european2023.classic .template__section__companyLocation {
+    font-family: "EB Garamond", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+    font-family: "Rubik", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__european2023.classic .template__section__title {
+    font-family: "EB Garamond", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__european2023.elegant {
+    font-family: "Roboto", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__european2023.elegant .template__name,
+.template__european2023.elegant .template__occupation {
+    font-family: "Playfair display", "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+}
+
+.template__european2023.elegant .template__section__date,
+.template__european2023.elegant .template__section__degree,
+.template__european2023.elegant .template__section__position,
+.template__european2023.elegant .template__section__collegeLocation,
+.template__european2023.elegant .template__section__companyLocation {
+    font-family: "Playfair display", "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+}
+
+.template__european2023.elegant .template__section__title {
+    font-family: "Playfair display", "Noto Serif SC",
+        "Noto Serif JP", "Noto Serif Hebrew";
+}
+
+.template__european2023.tech {
+    font-family: "Roboto", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__european2023.tech .template__name,
+.template__european2023.tech .template__occupation {
+    font-family: "Roboto mono", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__european2023.tech .template__section__date,
+.template__european2023.tech .template__section__degree,
+.template__european2023.tech .template__section__position,
+.template__european2023.tech .template__section__collegeLocation,
+.template__european2023.tech .template__section__companyLocation {
+    font-family: "Roboto mono", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__european2023.tech .template__section__title {
+    font-family: "Roboto mono", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__european2023.tech .template__contact {
+    font-family: "Roboto mono", "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  FONT SIZE                                 */
+/* -------------------------------------------------------------------------- */
+.template__european2023.small {
+    font-size: 10px;
+}
+
+.template__european2023.small .template__nameOccupation .template__name {
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.template__european2023.small .template__nameOccupation .template__occupation {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.88px;
+}
+
+.template__european2023.medium {
+    font-size: 11px;
+}
+
+.template__european2023.medium .template__nameOccupation .template__name {
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.template__european2023.medium .template__nameOccupation .template__occupation {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.88px;
+}
+
+.template__european2023.large {
+    font-size: 13px;
+}
+
+.template__european2023.large .template__nameOccupation .template__name {
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.template__european2023.large .template__nameOccupation .template__occupation {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.88px;
+}
+
+.template__european2023 {
+    display: flex;
+    width: 100%;
+    min-height: inherit;
+}
+
+.template__european2023.multiPage.A4.numPages-1 {
+    height: 1123.2px;
+}
+
+.template__european2023.multiPage.A4.numPages-2 {
+    height: 2246.4px;
+}
+
+.template__european2023.multiPage.A4.numPages-3 {
+    height: 3369.6px;
+}
+
+.template__european2023.multiPage.A4.numPages-4 {
+    height: 4492.8px;
+}
+
+.template__european2023.multiPage.A4.numPages-5 {
+    height: 5616px;
+}
+
+.template__european2023.multiPage.A4.numPages-6 {
+    height: 6739.2px;
+}
+
+.template__european2023.multiPage.A4.numPages-7 {
+    height: 7862.4px;
+}
+
+.template__european2023.multiPage.A4.numPages-8 {
+    height: 8985.6px;
+}
+
+.template__european2023.multiPage.A4.numPages-9 {
+    height: 10108.8px;
+}
+
+.template__european2023.multiPage.A4.numPages-10 {
+    height: 11232px;
+}
+
+.template__european2023.multiPage.letter.numPages-1 {
+    height: 1056px;
+}
+
+.template__european2023.multiPage.letter.numPages-2 {
+    height: 2112px;
+}
+
+.template__european2023.multiPage.letter.numPages-3 {
+    height: 3168px;
+}
+
+.template__european2023.multiPage.letter.numPages-4 {
+    height: 4224px;
+}
+
+.template__european2023.multiPage.letter.numPages-5 {
+    height: 5280px;
+}
+
+.template__european2023.multiPage.letter.numPages-6 {
+    height: 6336px;
+}
+
+.template__european2023.multiPage.letter.numPages-7 {
+    height: 7392px;
+}
+
+.template__european2023.multiPage.letter.numPages-8 {
+    height: 8448px;
+}
+
+.template__european2023.multiPage.letter.numPages-9 {
+    height: 9504px;
+}
+
+.template__european2023.multiPage.letter.numPages-10 {
+    height: 10560px;
+}
+
+.template__european2023__column__left {
+    min-height: 100%;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    padding: 68px 48px;
+    gap: 32px;
+}
+
+.template__european2023__column__right {
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 68px 45px;
+    gap: 32px;
+    box-sizing: border-box;
+}
+
+.template__european2023 .europeanShape {
+    top: 0;
+    position: absolute;
+    right: 0;
+}
+
+.template__european2023 .europeanFormat {
+    align-self: center;
+    margin-top: auto;
+}
+
+.template__european2023__title .template__nameOccupation .template__name {
+    font-weight: 400;
+    line-height: 60px;
+    margin-left: -3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.template__european2023__title .template__nameOccupation .template__occupation {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.88px;
+}
+
+.template__european2023__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    word-break: break-all;
+}
+
+.template__european2023__contact .mailAddress {
+    word-break: normal;
+}
+
+.template__european2023__contact .withIcon {
+    display: flex;
+    gap: 10px;
+}
+
+.template__european2023__contact .withIcon .icon {
+    display: flex;
+    align-items: center;
+}
+
+.template__european2023__objective {
+    position: relative;
+}
+
+.template__european2023__objective .europeanStars {
+    position: absolute;
+    top: -15px;
+    left: -20px;
+}
+
+.template__european2023__languages ul,
+.template__european2023__skills ul,
+.template__european2023__objective ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 13px;
+}
+
+.template__european2023__languages ul li,
+.template__european2023__skills ul li,
+.template__european2023__objective ul li {
+    position: relative;
+}
+
+.template__european2023__languages ul li:before,
+.template__european2023__skills ul li:before,
+.template__european2023__objective ul li:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+}
+
+.template__european2023__objective .template__section__title,
+.template__european2023__contact .template__section__title,
+.template__european2023__skills .template__section__title,
+.template__european2023__languages .template__section__title {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 7px 0;
+    margin-bottom: 12px;
+    word-break: break-word;
+    letter-spacing: 0.88px;
+}
+
+.template__european2023__objective ul,
+.template__european2023__contact ul,
+.template__european2023__skills ul,
+.template__european2023__languages ul {
+    margin-bottom: 0;
+}
+
+.template__european2023__objective .language__level:before,
+.template__european2023__contact .language__level:before,
+.template__european2023__skills .language__level:before,
+.template__european2023__languages .language__level:before {
+    margin: 0 4px;
+    content: "|";
+}
+
+.template__european2023__objective .language__text,
+.template__european2023__contact .language__text,
+.template__european2023__skills .language__text,
+.template__european2023__languages .language__text {
+    margin-left: 4px;
+}
+
+.template__european2023__education .template__section__description ul,
+.template__european2023__projects .template__section__description ul,
+.template__european2023__achievements .template__section__description ul,
+.template__european2023__experience .template__section__description ul,
+.template__european2023__honors .template__section__description ul,
+.template__european2023__publications .template__section__description ul,
+.template__european2023__custom .template__section__description ul,
+.template__european2023__references .template__section__description ul,
+.template__european2023__certifications .template__section__description ul {
+    margin-bottom: 0;
+}
+
+.template__european2023__education .template__section__title,
+.template__european2023__projects .template__section__title,
+.template__european2023__achievements .template__section__title,
+.template__european2023__experience .template__section__title,
+.template__european2023__honors .template__section__title,
+.template__european2023__publications .template__section__title,
+.template__european2023__custom .template__section__title,
+.template__european2023__references .template__section__title,
+.template__european2023__certifications .template__section__title {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 7px 0;
+    margin-bottom: 24px;
+    word-break: break-word;
+    letter-spacing: 0.88px;
+}
+
+.template__european2023__education ul,
+.template__european2023__projects ul,
+.template__european2023__achievements ul,
+.template__european2023__experience ul,
+.template__european2023__honors ul,
+.template__european2023__publications ul,
+.template__european2023__custom ul,
+.template__european2023__references ul,
+.template__european2023__certifications ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 0;
+}
+
+.template__european2023__education ul li,
+.template__european2023__projects ul li,
+.template__european2023__achievements ul li,
+.template__european2023__experience ul li,
+.template__european2023__honors ul li,
+.template__european2023__publications ul li,
+.template__european2023__custom ul li,
+.template__european2023__references ul li,
+.template__european2023__certifications ul li {
+    position: relative;
+}
+
+.template__european2023__education ul li:before,
+.template__european2023__projects ul li:before,
+.template__european2023__achievements ul li:before,
+.template__european2023__experience ul li:before,
+.template__european2023__honors ul li:before,
+.template__european2023__publications ul li:before,
+.template__european2023__custom ul li:before,
+.template__european2023__references ul li:before,
+.template__european2023__certifications ul li:before {
+    position: absolute;
+}
+
+.template__european2023__experience .template__section,
+.template__european2023__education .template__section {
+    display: flex;
+}
+
+.template__european2023__experience .template__section__container,
+.template__european2023__education .template__section__container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.template__european2023__experience .template__section__degree,
+.template__european2023__education .template__section__degree {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.88px;
+}
+
+.template__european2023__experience .template__section__companyLocation,
+.template__european2023__experience .template__section__collegeLocation,
+.template__european2023__education .template__section__companyLocation,
+.template__european2023__education .template__section__collegeLocation {
+    display: flex;
+    font-weight: 600;
+    letter-spacing: 0.88px;
+}
+
+.template__european2023__experience .template__section__location:not(:first-child),
+.template__european2023__education .template__section__location:not(:first-child) {
+    margin-left: 4px;
+}
+
+.template__european2023__experience .template__section__company,
+.template__european2023__experience .template__section__college,
+.template__european2023__education .template__section__company,
+.template__european2023__education .template__section__college {
+    font-weight: 600;
+    letter-spacing: 0.88px;
+    font-style: normal;
+}
+
+.template__european2023__experience .template__section__company:after,
+.template__european2023__experience .template__section__college:after,
+.template__european2023__education .template__section__company:after,
+.template__european2023__education .template__section__college:after {
+    content: ".";
+}
+
+.template__european2023__experience .template__section__left,
+.template__european2023__education .template__section__left {
+    margin-left: 20px;
+    position: relative;
+    width: 68px;
+    min-width: 68px;
+    margin-right: 30px;
+}
+
+.template__european2023__experience .template__section__left:before,
+.template__european2023__education .template__section__left:before {
+    content: "";
+    top: 5px;
+    left: -20px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 6px;
+}
+
+.template__european2023__experience .template__section__left:after,
+.template__european2023__education .template__section__left:after {
+    content: "";
+    left: -16.4px;
+    top: 13px;
+    position: absolute;
+    width: 1px;
+    height: calc(100% + 20px);
+    opacity: 0.15;
+}
+
+.template__european2023__experience .template__section:last-child__right,
+.template__european2023__education .template__section:last-child__right {
+    margin-bottom: 0;
+}
+
+.template__european2023__experience .template__section:last-child .template__section__left:after,
+.template__european2023__education .template__section:last-child .template__section__left:after {
+    content: "";
+    left: -17px;
+    top: 10px;
+    border-left: none;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+}
+
+.template__european2023 .template__header__photo {
+    height: 190px !important;
+    width: 190px;
+    margin: auto;
+}
+
+.template__european2023 .template__header__photo .rounded {
+    border-radius: 100%;
+}
+
+.template__european2023 .template__header__photo img {
+    width: 190px;
+}
+
+.template__cl__universal.line-spacing--50 .content {
+    line-height: 16px;
+}
+
+.template__cl__universal.line-spacing--75 .content {
+    line-height: 18px;
+}
+
+.template__cl__universal.line-spacing--100 .content {
+    line-height: 20px;
+}
+
+.template__cl__universal.line-spacing--125 .content {
+    line-height: 22px;
+}
+
+.template__cl__universal.line-spacing--150 .content {
+    line-height: 24px;
+}
+
+.template__cl__universal.classic {
+    font-family: Noto Serif, "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__cl__universal.elegant {
+    font-family: Libre Baskerville, "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__cl__universal.modern {
+    font-family: Rubik, "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__cl__universal.professional {
+    font-family: Bitter, "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__cl__universal.tech {
+    font-family: Roboto Mono, "Noto Serif SC", "Noto Serif JP",
+        "Noto Serif Hebrew";
+}
+
+.template__cl__universal.small {
+    font-size: 14px;
+}
+
+.template__cl__universal.small .cover-letter__recipient,
+.template__cl__universal.small .cover-letter__date,
+.template__cl__universal.small .cover-letter__name {
+    font-size: 14px;
+}
+
+.template__cl__universal.medium {
+    font-size: 15px;
+}
+
+.template__cl__universal.medium .cover-letter__recipient,
+.template__cl__universal.medium .cover-letter__date,
+.template__cl__universal.medium .cover-letter__name {
+    font-size: 15px;
+}
+
+.template__cl__universal.large {
+    font-size: 16px;
+}
+
+.template__cl__universal.large .cover-letter__recipient,
+.template__cl__universal.large .cover-letter__date,
+.template__cl__universal.large .cover-letter__name {
+    font-size: 16px;
+}
+
+.template__cl__universal.green {
+    background: #17a095;
+}
+
+.template__cl__universal.blue {
+    background: #3176e0;
+}
+
+.template__cl__universal.red {
+    background: #d0021b;
+}
+
+.template__cl__universal.black {
+    background: #303030;
+}
+
+.template__cl__universal.grey {
+    background: #9a9a9a;
+}
+
+.template__cl__universal.brown {
+    background: #6e5750;
+}
+
+.template__cl__universal.light-green {
+    background: #81f6dc;
+}
+
+.template__cl__universal.light-blue {
+    background: #d0e2ff;
+}
+
+.template__cl__universal.light-red {
+    background: #fdced3;
+}
+
+.template__cl__universal.light-black {
+    background: #d0d0d0;
+}
+
+.template__cl__universal.light-grey {
+    background: #eeeeee;
+}
+
+.template__cl__universal.light-brown {
+    background: #f4dfcd;
+}
+
+.template__cl__universal.eu-blue {
+    background: #003399;
+}
+
+.template__cl__universal.eu-grey {
+    background: #dce6f1;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             TEMPLATE PROPERTIES                            */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                              STATIC PROPERTIES                             */
+/* -------------------------------------------------------------------------- */
+.template__cl__universal {
+    display: flex;
+    box-sizing: border-box;
+    min-height: inherit;
+    padding-left: 32px;
+    color: #3d4042;
+    flex-grow: 1;
+}
+
+.template__cl__universal.multiPage.A4.numPages-1 {
+    height: 1123.2px;
+}
+
+.template__cl__universal.multiPage.A4.numPages-2 {
+    height: 2246.4px;
+}
+
+.template__cl__universal.multiPage.A4.numPages-3 {
+    height: 3369.6px;
+}
+
+.template__cl__universal.multiPage.A4.numPages-4 {
+    height: 4492.8px;
+}
+
+.template__cl__universal.multiPage.A4.numPages-5 {
+    height: 5616px;
+}
+
+.template__cl__universal.multiPage.A4.numPages-6 {
+    height: 6739.2px;
+}
+
+.template__cl__universal.multiPage.A4.numPages-7 {
+    height: 7862.4px;
+}
+
+.template__cl__universal.multiPage.A4.numPages-8 {
+    height: 8985.6px;
+}
+
+.template__cl__universal.multiPage.A4.numPages-9 {
+    height: 10108.8px;
+}
+
+.template__cl__universal.multiPage.A4.numPages-10 {
+    height: 11232px;
+}
+
+.template__cl__universal.multiPage.letter.numPages-1 {
+    height: 1056px;
+}
+
+.template__cl__universal.multiPage.letter.numPages-2 {
+    height: 2112px;
+}
+
+.template__cl__universal.multiPage.letter.numPages-3 {
+    height: 3168px;
+}
+
+.template__cl__universal.multiPage.letter.numPages-4 {
+    height: 4224px;
+}
+
+.template__cl__universal.multiPage.letter.numPages-5 {
+    height: 5280px;
+}
+
+.template__cl__universal.multiPage.letter.numPages-6 {
+    height: 6336px;
+}
+
+.template__cl__universal.multiPage.letter.numPages-7 {
+    height: 7392px;
+}
+
+.template__cl__universal.multiPage.letter.numPages-8 {
+    height: 8448px;
+}
+
+.template__cl__universal.multiPage.letter.numPages-9 {
+    height: 9504px;
+}
+
+.template__cl__universal.multiPage.letter.numPages-10 {
+    height: 10560px;
+}
+
+.template__cl__universal .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 64px 56px 48px 56px;
+    background: #ffffff;
+    gap: 72px;
+}
+
+.template__cl__universal .wrapper .header .custom_name {
+    font-size: 36px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.34px;
+}
+
+.template__cl__universal .wrapper .content {
+    display: flex;
+    background: #ffffff;
+    gap: 32px;
+}
+
+.template__cl__universal .wrapper .content_left {
+    flex-grow: 1;
+    border-right: 2px solid rgba(153, 162, 152, 0.33);
+    width: 30%;
+    min-width: 30%;
+    max-width: 30%;
+    padding: 0 32px 0 0;
+}
+
+.template__cl__universal .wrapper .content_right .custom_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.template__cl__universal .cover-letter__date {
+    font-weight: normal;
+    display: flex;
+    margin-bottom: 36px;
+}
+
+.template__cl__universal .cover-letter__name {
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+}
+
+.template__cl__universal .cover-letter__name--signature,
+.template__cl__universal .cover-letter__name--titleName,
+.template__cl__universal .cover-letter__name--firstName,
+.template__cl__universal .cover-letter__name--lastName {
+    font-weight: inherit;
+    text-transform: uppercase;
+}
+
+.template__cl__universal .cover-letter__name--signature {
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.template__cl__universal .cover-letter__signature {
+    font-style: normal;
+}
+
+.template__cl__universal .cover-letter__recipient {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-style: normal;
+}
+
+.template__cl__universal .cover-letter__recipient span,
+.template__cl__universal .cover-letter__recipient div,
+.template__cl__universal .cover-letter__recipient p {
+    font-style: normal;
+}
