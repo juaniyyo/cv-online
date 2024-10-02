@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<script type="text/javascript" async="" src="./libs/main.js"></script>
+<script type="text/javascript" async="" src="./libs/main.js?v=0.2.2"></script>
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -14,10 +14,10 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="#288ED9" />
   <!--<base href="/share/">-->
   <base href="." />
-  <title>CV Share</title>
+  <title>CV Juan M. Rube</title>
   <meta content="width=device-width,initial-scale=1" name="viewport" />
-  <link href="./libs/main.css" rel="stylesheet" />
-  <link href="./libs/app.css" rel="stylesheet" />
+  <link href="./libs/main.css?v=0.2.0" rel="stylesheet" />
+  <link href="./libs/app.css?v=0.2.0" rel="stylesheet" />
 </head>
 
 <body cz-shortcut-listen="true">
@@ -31,7 +31,8 @@
           </div>
           <div data-qa="views" class="sc-cSHVUG gcBbaA">
             <span>
-              <span class="visualizations-value">0 personas</span>&nbsp;han visto tu currículum</span>
+              <span class="visualizations-value" id="counter">0</span>
+              <span class="visualizations-value"></span>personas</span>&nbsp;han visto tu currículum</span>
           </div>
         </div>
 
@@ -49,17 +50,17 @@
             <img src="images/descargar.png">
           </div>
 
-          <div data-qa="fullscreen-button-icon" title="Full Screen" class="sc-gqjmRU haRcdX">
+          <!-- <div data-qa="fullscreen-button-icon" id="fullscreen-button-icon" title="Full Screen" class="sc-gqjmRU haRcdX">
             <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"></path>
             </svg>
-          </div>
+          </div> -->
         </div>
       </div>
       
       <div class="fGvqml"></div>
 
-      <div data-qa="share_document" class="sc-bwzfXH fAZNfJ">
+      <div data-qa="share_document" id="share_document" class="sc-bwzfXH fAZNfJ">
         <div>
           <div id="template-preview" class="template html">
             <div class="resume-container container A4">
@@ -403,7 +404,7 @@
                               fill="#4C74C4"></path>
                           </svg>
                         </div>
-                        <div>https://www.linkedin.com/in/jmrube/</div>
+                        <div><a href="https://linkedin.com/in/jmrube">https://linkedin.com/in/jmrube</a></div>
                       </div>
                     </div>
                   </section>
